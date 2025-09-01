@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Rivendell Trout Estate Design System - Luxury Flyfishing Retreat */
+
+@layer base {
+  :root {
+    /* Luxury Nature Color Palette */
+    --background: 28 20% 97%;
+    --foreground: 140 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 30% 15%;
+
+    /* Forest Green Primary - Sophisticated & Natural */
+    --primary: 140 40% 25%;
+    --primary-foreground: 28 20% 97%;
+    --primary-hover: 140 45% 20%;
+
+    /* Warm Earth Secondary */
+    --secondary: 35 25% 85%;
+    --secondary-foreground: 140 30% 15%;
+
+    /* Subtle Muted Tones */
+    --muted: 28 15% 92%;
+    --muted-foreground: 140 15% 45%;
+
+    /* Gold Accent for Luxury */
+    --accent: 45 85% 65%;
+    --accent-foreground: 140 30% 15%;
+    --accent-hover: 45 90% 55%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 28 20% 97%;
+
+    --border: 140 15% 85%;
+    --input: 140 15% 88%;
+    --ring: 140 40% 25%;
+
+    --radius: 0.75rem;
+
+    /* Custom Luxury Design Tokens */
+    --forest-deep: 140 50% 20%;
+    --forest-light: 140 30% 35%;
+    --earth-warm: 35 35% 75%;
+    --earth-rich: 35 45% 45%;
+    --gold-luxury: 45 85% 65%;
+    --gold-soft: 45 60% 85%;
+    --gold-text: 45 85% 35%;
+    --river-blue: 195 45% 35%;
+    --stone-light: 28 15% 90%;
+    --stone-medium: 28 20% 70%;
+
+    /* Gradients for Premium Feel */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--forest-deep)), hsl(var(--forest-light)));
+    --gradient-luxury: linear-gradient(135deg, hsl(var(--gold-luxury)), hsl(var(--earth-rich)));
+    --gradient-nature: linear-gradient(180deg, hsl(var(--forest-light)), hsl(var(--river-blue)));
+    --gradient-subtle: linear-gradient(135deg, hsl(var(--stone-light)), hsl(var(--muted)));
+
+    /* Elegant Shadows */
+    --shadow-luxury: 0 10px 40px -10px hsl(var(--forest-deep) / 0.3);
+    --shadow-elegant: 0 4px 20px -4px hsl(var(--forest-deep) / 0.15);
+    --shadow-soft: 0 2px 10px -2px hsl(var(--forest-deep) / 0.1);
+
+    /* Smooth Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Video container styles for blog posts */
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 2rem 0;
+  }
+
+  .video-container iframe {
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  /* Responsive video container */
+  @media (max-width: 768px) {
+    .video-container iframe {
+      height: 250px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .video-container iframe {
+      height: 350px;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .video-container iframe {
+      height: 400px;
+    }
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat;
+  }
+}
+
+@layer components {
+  /* Blog Article Styles - Optimized for Readability */
+  .blog-article {
+    @apply max-w-4xl mx-auto px-6 py-12;
+  }
+
+  .blog-content {
+    @apply prose prose-lg max-w-none
+           prose-headings:font-montserrat prose-headings:text-[hsl(var(--foreground))]
+           prose-h1:text-4xl prose-h1:font-bold prose-h1:mb-6 prose-h1:leading-tight
+           prose-h2:text-2xl prose-h2:font-semibold prose-h2:mt-12 prose-h2:mb-6 prose-h2:text-[hsl(var(--primary))]
+           prose-h3:text-xl prose-h3:font-semibold prose-h3:mt-8 prose-h3:mb-4 prose-h3:text-[hsl(var(--primary))]
+           prose-p:text-base prose-p:leading-relaxed prose-p:mb-6 prose-p:text-[hsl(var(--foreground))]
+           prose-strong:text-[hsl(var(--primary))] prose-strong:font-semibold
+           prose-ul:mb-6 prose-ol:mb-6 prose-li:mb-2 prose-li:text-[hsl(var(--foreground))]
+           prose-blockquote:border-l-4 prose-blockquote:border-[hsl(var(--accent))] 
+           prose-blockquote:bg-[hsl(var(--muted))] prose-blockquote:p-6 prose-blockquote:rounded-r-lg
+           prose-code:bg-[hsl(var(--muted))] prose-code:px-2 prose-code:py-1 prose-code:rounded
+           prose-pre:bg-[hsl(var(--muted))] prose-pre:p-6 prose-pre:rounded-lg;
+  }
+
+  .blog-card {
+    @apply bg-card border border-[hsl(var(--border))] rounded-xl overflow-hidden
+           shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-luxury)]
+           transition-[var(--transition-smooth)] hover:-translate-y-2;
+  }
+
+  .blog-card-featured {
+    @apply bg-gradient-to-br from-[hsl(var(--stone-light))] to-[hsl(var(--muted))]
+           border-2 border-[hsl(var(--accent))] ring-2 ring-[hsl(var(--accent))]/20;
+  }
+
+  .blog-header {
+    @apply border-b border-[hsl(var(--border))] pb-8 mb-12;
+  }
+
+  .blog-meta {
+    @apply flex items-center gap-6 text-[hsl(var(--muted-foreground))] text-sm mb-4;
+  }
+
+  .blog-category {
+    @apply inline-block bg-[hsl(var(--accent))] text-[hsl(var(--accent-foreground))] 
+           px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wide;
+  }
+
+  .blog-excerpt {
+    @apply text-[hsl(var(--muted-foreground))] text-lg leading-relaxed;
+  }
+
+  /* Button Variants */
+  .btn-luxury {
+    @apply bg-gradient-to-r from-[hsl(var(--gold-luxury))] to-[hsl(var(--earth-rich))] 
+           text-[hsl(var(--forest-deep))] font-semibold px-8 py-4 rounded-lg
+           shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-luxury)]
+           transition-[var(--transition-smooth)] hover:scale-105;
+  }
+
+  .btn-hero {
+    @apply bg-[hsl(var(--gold-luxury))] text-[hsl(var(--forest-deep))] 
+           font-bold px-10 py-5 rounded-lg text-lg
+           shadow-[var(--shadow-luxury)] hover:bg-[hsl(var(--accent-hover))]
+           transition-[var(--transition-smooth)] hover:scale-105;
+  }
+
+  .btn-outline-luxury {
+    @apply border-2 border-[hsl(var(--gold-luxury))] text-[hsl(var(--gold-text))]
+           bg-transparent hover:bg-[hsl(var(--gold-luxury))] hover:text-[hsl(var(--forest-deep))]
+           font-semibold px-6 py-3 rounded-lg
+           transition-[var(--transition-smooth)];
+  }
+
+  /* Card Variants */
+  .card-luxury {
+    @apply bg-card border border-[hsl(var(--border))] rounded-xl
+           shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-luxury)]
+           transition-[var(--transition-smooth)] hover:-translate-y-1;
+  }
+
+  .card-hero {
+    @apply bg-gradient-to-br from-[hsl(var(--stone-light))] to-[hsl(var(--muted))]
+           border border-[hsl(var(--border))] rounded-xl
+           shadow-[var(--shadow-luxury)] backdrop-blur-sm;
+  }
+
+  /* Navigation Styles */
+  .nav-link {
+    @apply text-[hsl(var(--foreground))] hover:text-[hsl(var(--primary))]
+           font-medium transition-[var(--transition-fast)]
+           relative after:content-[''] after:absolute after:w-full after:scale-x-0 
+           after:h-0.5 after:bottom-0 after:left-0 after:bg-[hsl(var(--primary))]
+           after:origin-bottom-right after:transition-transform after:duration-300 
+           hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+
+  /* Text Styles */
+  .text-luxury {
+    @apply text-[hsl(var(--gold-luxury))] font-semibold;
+  }
+
+  .text-hero {
+    @apply text-4xl md:text-6xl font-montserrat font-bold 
+           bg-gradient-to-r from-[hsl(var(--primary-foreground))] to-[hsl(var(--gold-soft))]
+           bg-clip-text text-transparent;
+  }
+
+  .text-subtitle {
+    @apply text-xl md:text-2xl text-[hsl(var(--muted-foreground))] font-light;
+  }
+
+  /* Animations */
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}

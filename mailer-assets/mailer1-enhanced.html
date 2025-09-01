@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivendell Trout Estate - Special Updates & Exclusive Offer</title>
+    <style>
+        /* Reset styles for email clients */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Mobile-first base styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .email-container {
+            width: 100% !important;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c59 100%);
+            padding: 25px 15px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            color: #ffffff;
+            font-size: 24px;
+            margin: 0;
+            font-weight: 700;
+            font-family: 'Georgia', serif;
+            line-height: 1.2;
+        }
+        
+        .header p {
+            color: #e6d7a3;
+            font-size: 14px;
+            margin: 8px 0 0 0;
+        }
+        
+        .content-section {
+            padding: 25px 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .content-section:last-child {
+            border-bottom: none;
+        }
+        
+        .section-title {
+            color: #2d5016;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 0 15px 0;
+            font-family: 'Georgia', serif;
+            line-height: 1.3;
+        }
+        
+        .highlight-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #2d5016;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        
+        .promo-banner {
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            padding: 20px 15px;
+            text-align: center;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        
+        .promo-banner h2 {
+            color: #2d5016;
+            font-size: 22px;
+            margin: 0 0 8px 0;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .promo-banner p {
+            color: #2d5016;
+            font-size: 16px;
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c59 100%);
+            color: #ffffff !important;
+            padding: 16px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 15px 0;
+            text-align: center;
+            min-width: 200px;
+            box-sizing: border-box;
+        }
+        
+        .cta-button:hover {
+            background: linear-gradient(135deg, #1e3a0f 0%, #3d6b4a 100%);
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 15px 0;
+        }
+        
+        .image-container img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+        
+        .feature-list li {
+            padding: 6px 0;
+            padding-left: 20px;
+            position: relative;
+            font-size: 14px;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            color: #2d5016;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .footer {
+            background-color: #2d5016;
+            color: #ffffff;
+            padding: 25px 15px;
+            text-align: center;
+        }
+        
+        .footer h3 {
+            color: #e6d7a3;
+            font-size: 18px;
+            margin: 0 0 12px 0;
+            font-family: 'Georgia', serif;
+        }
+        
+        .footer p {
+            margin: 4px 0;
+            font-size: 13px;
+        }
+        
+        .social-links {
+            margin: 15px 0;
+        }
+        
+        .social-links a {
+            color: #e6d7a3;
+            text-decoration: none;
+            margin: 0 8px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .unsubscribe {
+            font-size: 11px;
+            color: #cccccc;
+            margin-top: 15px;
+        }
+        
+        .unsubscribe a {
+            color: #cccccc;
+        }
+        
+        /* Enhanced mobile optimizations */
+        @media only screen and (max-width: 480px) {
+            .email-container {
+                width: 100% !important;
+                min-width: 320px;
+            }
+            
+            .header {
+                padding: 20px 12px !important;
+            }
+            
+            .header h1 {
+                font-size: 22px !important;
+            }
+            
+            .header p {
+                font-size: 13px !important;
+            }
+            
+            .content-section {
+                padding: 20px 12px !important;
+            }
+            
+            .section-title {
+                font-size: 18px !important;
+                margin-bottom: 12px !important;
+            }
+            
+            .promo-banner {
+                padding: 18px 12px !important;
+                margin: 12px 0 !important;
+            }
+            
+            .promo-banner h2 {
+                font-size: 20px !important;
+            }
+            
+            .promo-banner p {
+                font-size: 15px !important;
+            }
+            
+            .cta-button {
+                padding: 14px 20px !important;
+                font-size: 15px !important;
+                min-width: 180px !important;
+                margin: 12px 0 !important;
+            }
+            
+            .highlight-box {
+                padding: 12px !important;
+                margin: 12px 0 !important;
+            }
+            
+            .feature-list li {
+                font-size: 13px !important;
+                padding: 5px 0 !important;
+                padding-left: 18px !important;
+            }
+            
+            .footer {
+                padding: 20px 12px !important;
+            }
+            
+            .footer h3 {
+                font-size: 16px !important;
+            }
+            
+            .footer p {
+                font-size: 12px !important;
+            }
+            
+            .social-links a {
+                font-size: 13px !important;
+                margin: 0 6px !important;
+            }
+            
+            .unsubscribe {
+                font-size: 10px !important;
+            }
+        }
+        
+        /* Tablet optimizations */
+        @media only screen and (min-width: 481px) and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            
+            .header {
+                padding: 30px 20px !important;
+            }
+            
+            .header h1 {
+                font-size: 26px !important;
+            }
+            
+            .content-section {
+                padding: 30px 20px !important;
+            }
+            
+            .section-title {
+                font-size: 22px !important;
+            }
+            
+            .cta-button {
+                padding: 18px 28px !important;
+                font-size: 16px !important;
+            }
+        }
+        
+        /* Desktop enhancements */
+        @media only screen and (min-width: 601px) {
+            .email-container {
+                width: 600px !important;
+            }
+            
+            .header {
+                padding: 35px 25px !important;
+            }
+            
+            .header h1 {
+                font-size: 28px !important;
+            }
+            
+            .header p {
+                font-size: 16px !important;
+            }
+            
+            .content-section {
+                padding: 35px 25px !important;
+            }
+            
+            .section-title {
+                font-size: 24px !important;
+                margin-bottom: 20px !important;
+            }
+            
+            .promo-banner {
+                padding: 30px 25px !important;
+                margin: 25px 0 !important;
+            }
+            
+            .promo-banner h2 {
+                font-size: 26px !important;
+            }
+            
+            .cta-button {
+                padding: 18px 32px !important;
+                font-size: 16px !important;
+            }
+            
+            .highlight-box {
+                padding: 20px !important;
+                margin: 20px 0 !important;
+            }
+            
+            .feature-list li {
+                font-size: 14px !important;
+                padding: 8px 0 !important;
+                padding-left: 25px !important;
+            }
+            
+            .footer {
+                padding: 35px 25px !important;
+            }
+        }
+        
+        /* Touch-friendly button improvements */
+        .cta-button {
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+        }
+        
+        /* Improved text readability on mobile */
+        p {
+            margin: 0 0 12px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        /* Better spacing for mobile */
+        h3 {
+            margin: 15px 0 8px 0;
+            font-size: 16px;
+            line-height: 1.3;
+        }
+        
+        /* Optimized image display */
+        .image-container img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="min-width: 320px;">
+        <tr>
+            <td align="center" style="background-color: #f8f9fa; padding: 10px 0;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="email-container" style="max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        <td class="header">
+                            <div style="text-align: center; margin-bottom: 15px;">
+                                <img src="logo.png" alt="Rivendell Trout Estate Logo" style="max-width: 200px; height: auto; margin: 0 auto;">
+                            </div>
+                            <h1>Rivendell Trout Estate</h1>
+                            <p>Luxury Flyfishing in the Heart of Mpumalanga</p>
+                        </td>
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="content-section">
+                            <h2 class="section-title">🌿 Your Guide to the Best Rivendell Experience Yet</h2>
+                            <p>Hello from the Spekboom Valley,</p>
+                            <p>We wanted to share some updates that might help you plan your next escape to Rivendell. Whether you're a returning guest or considering your first visit, here's what's new and noteworthy in our little corner of paradise.</p>
+                        </td>
+                    </tr>
+                    
+                    <!-- Costa's Walk Section -->
+                    <tr>
+                        <td class="content-section">
+                            <h2 class="section-title">🥾 Hidden Gem: Costa's Walk Trail</h2>
+                            <div class="image-container">
+                                <img src="costas-walk-view.jpg" alt="Panoramic view from Costa's Walk trail showing the Spekboom Valley" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            </div>
+                            <p style="text-align: center; font-style: italic; color: #666; margin: 10px 0 0 0;">Breathtaking views from Costa's Walk trail</p>
+                            
+                            <div class="image-container">
+                                <img src="costas-walk-spring.jpg" alt="Crystal-clear mountain spring discovered on Costa's Walk" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            </div>
+                            <p style="text-align: center; font-style: italic; color: #666; margin: 10px 0 0 0;">The hidden mountain spring - a perfect spot to refresh</p>
+                            <p>If you haven't experienced <strong>Costa's Walk</strong> yet, you're missing one of our estate's best-kept secrets. This scenic trail has become a must-do for guests who want to truly connect with the history and beauty of the Spekboom Valley.</p>
+                            
+                            <h3 style="color: #2d5016; font-size: 18px; margin: 20px 0 10px 0;">Why guests love this trail:</h3>
+                            <ul class="feature-list">
+                                <li><strong>Ancient Bokoni Ruins:</strong> Walk through historical stone structures from the 1500s-1800s</li>
+                                <li><strong>Mountain Spring:</strong> Discover a hidden treasure with crystal-clear water</li>
+                                <li><strong>Panoramic Views:</strong> Sweeping vistas of the Spekboom Valley and surrounding mountains</li>
+                                <li><strong>Picnic Spot:</strong> Perfect shaded area to relax and enjoy the scenery</li>
+                                <li><strong>Easy Access:</strong> Well-cleared trail suitable for most fitness levels</li>
+                            </ul>
+                            
+                            <div class="highlight-box" style="background-color: #e8f5e8; border-left-color: #2d5016;">
+                                <h3 style="color: #2d5016; margin: 0 0 10px 0; font-size: 16px;">Pro Tip:</h3>
+                                <p style="margin: 0; font-size: 14px;">The best time to walk Costa's Trail is early morning or late afternoon when the light is perfect for photography and the temperatures are comfortable.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!-- Special Promotion -->
+                    <tr>
+                        <td class="content-section">
+                            <div class="promo-banner">
+                                <h2>🎯 LIMITED TIME: 33% OFF ALL BOOKINGS</h2>
+                                <p>Book Now for Stays Until December 7, 2025</p>
+                            </div>
+                            
+                            <p style="text-align: center; font-size: 18px; font-weight: 600; color: #2d5016; margin: 20px 0;">
+                                <strong>Save R1,000 - R3,000+ on your Rivendell getaway!</strong>
+                            </p>
+                            
+                            <p>We're offering an exclusive <strong>33% discount</strong> on all bookings for stays between now and December 7, 2025. This is our biggest discount of the year, giving you more budget for guided fishing trips, local excursions, or simply extending your stay.</p>
+                            
+                            <div class="image-container">
+                                <img src="luxury-cottage-interior.jpg" alt="Luxury cottage interior at Rivendell Trout Estate" style="width: 100%; max-width: 560px; height: auto;">
+                            </div>
+                            
+                            <div class="highlight-box" style="background-color: #e8f5e8; border-left-color: #2d5016;">
+                                <h3 style="color: #2d5016; margin: 0 0 15px 0; font-size: 18px;">What's Included in Your Stay:</h3>
+                                <ul class="feature-list">
+                                    <li>Luxury self-catering cottages with river views</li>
+                                    <li>Access to our regularly stocked Spekboom River</li>
+                                    <li>All hiking trails including Costa's Walk</li>
+                                    <li>Pet-friendly accommodation (R150 per pet per day)</li>
+                                    <li>Easy access via the improved roads</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="highlight-box" style="background-color: #fff3cd; border-left-color: #ffc107;">
+                                <h3 style="color: #2d5016; margin: 0 0 10px 0; font-size: 16px;">💡 Pro Tip:</h3>
+                                <p style="margin: 0; font-size: 14px;">With these savings, you could add a guided fishing experience or extend your stay by an extra day - the choice is yours!</p>
+                            </div>
+                            
+                            <p style="text-align: center; margin: 30px 0;">
+                                <a href="https://book.nightsbridge.com/24847?promocode=WEBDIRECT" class="cta-button">Book Now with 33% Savings</a>
+                            </p>
+                            
+                            <p style="text-align: center; font-size: 14px; color: #666; margin: 20px 0 0 0;">
+                                <em>Click the button above to access our discounted rates automatically</em>
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <!-- Road Repair Section -->
+                    <tr>
+                        <td class="content-section">
+                            <h2 class="section-title">🛣️ Getting Here: What You Need to Know</h2>
+                            
+                            <p>If you haven't visited recently, you'll be pleasantly surprised by the journey to Rivendell. Here's the latest on road conditions and what to expect.</p>
+                            
+                            <div class="highlight-box">
+                                <h3 style="color: #2d5016; margin: 0 0 15px 0; font-size: 20px;">Great News: The Main Road is Fixed!</h3>
+                                <p style="margin: 0 0 15px 0;">The Belfast–Dullstroom–Lydenburg road has been completely resurfaced. What used to be a bumpy, pothole-filled journey is now smooth sailing all the way.</p>
+                                <p style="margin: 0 0 15px 0;"><strong>Your journey will be:</strong></p>
+                                <ul class="feature-list">
+                                    <li>Much more comfortable and stress-free</li>
+                                    <li>Faster with no need to dodge potholes</li>
+                                    <li>Easier on your vehicle</li>
+                                    <li>More enjoyable with the scenic views</li>
+                                </ul>
+                                <p style="margin: 15px 0 0 0; font-style: italic;">We've driven it ourselves and can confirm it's a world of difference!</p>
+                            </div>
+                            
+                            <div class="image-container">
+                                <img src="aerial-estate-view.jpg" alt="Aerial view of Rivendell Trout Estate and surrounding landscape" style="width: 100%; max-width: 560px; height: auto;">
+                            </div>
+                            
+                            <div class="highlight-box" style="background-color: #fff3cd; border-left-color: #ffc107;">
+                                <h3 style="color: #2d5016; margin: 0 0 10px 0; font-size: 16px;">Vehicle Note:</h3>
+                                <p style="margin: 0; font-size: 14px;">The main road is excellent, but there's still 11km of gravel access road. We recommend SUVs, bakkies, or vehicles with higher clearance than sports sedans for the best experience.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!-- Additional Images -->
+                    <tr>
+                        <td class="content-section">
+                            <div class="image-container">
+                                <img src="fishing-image-1.jpg" alt="Flyfishing on the Spekboom River" style="width: 100%; max-width: 560px; height: auto;">
+                            </div>
+                            <p style="text-align: center; font-style: italic; color: #666; margin: 10px 0 0 0;">Experience world-class flyfishing on our crystal-clear waters</p>
+                        </td>
+                    </tr>
+                    
+                    <!-- Call to Action -->
+                    <tr>
+                        <td class="content-section" style="text-align: center;">
+                            <h2 class="section-title">Ready to Start Planning?</h2>
+                            <p>Whether you're a returning guest or planning your first visit, we hope this information helps you make the most of your Rivendell experience. From the improved roads to the hidden hiking trails, there's always something new to discover in the Spekboom Valley.</p>
+                            
+                            <div class="image-container">
+                                <img src="hero-cottage-river.jpg" alt="Beautiful cottage with river views at Rivendell" style="width: 100%; max-width: 560px; height: auto;">
+                            </div>
+                            
+                            <p style="margin: 30px 0;">
+                                <a href="https://book.nightsbridge.com/24847?promocode=WEBDIRECT" class="cta-button">Book Your Stay with 33% Savings</a>
+                            </p>
+                            
+                            <p style="font-size: 14px; color: #666;">
+                                Questions? Contact us at <a href="mailto:info@rivendelltroutestate.co.za" style="color: #2d5016;">info@rivendelltroutestate.co.za</a> or call +27 83 645 8313
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="footer">
+                            <h3>Rivendell Trout Estate</h3>
+                            <p>Finsbury Valley, Lydenburg, Mpumalanga, South Africa</p>
+                            <p>Luxury Flyfishing & Nature Retreat</p>
+                            
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/rivendelltroutestate/">Facebook</a> |
+                                <a href="https://www.instagram.com/rivendelltrout_estate/">Instagram</a> |
+                                <a href="https://rivendelltroutestate.co.za">Website</a>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
